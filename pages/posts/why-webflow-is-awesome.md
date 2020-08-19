@@ -31,7 +31,7 @@ Compared to the traditional way of building websites (i.e. writing HTML, CSS and
 
 
 
-Editing content on your website is very easy and intuitive thanks to Webflow's Editor. It allows you to directly modify the content of a page on the fly (you can click on a text paragraph and change it directly). You don't need any previous experience or technical knowledge.
+Editing content on your website is very easy and intuitive thanks to Webflow's Editor. It allows you to directly modify the content of a page, you don't need any previous experience or technical knowledge.
 
 
 
