@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="section post-section">
+  <div class="post-container triangle top">
+    <img src="{{ "/assets/images/triangle-top-white.svg" | relative_url }}"
+    alt="">
+  </div>
+
+  <div class="post-container">
+    <!-- <a href="#top" class="back-to-top w-inline-block">
+        <img src="{{ "/assets/images/top-arrow.svg" | relative_url }}" alt="">
+        <div class="back-to-top-text">back to top</div>
+      </a> -->
+
+    <div class="text-container">
+      <div class="rich-text w-richtext">
+        {% if page.inject_title %}
+        <h1>{{ page.title }}</h1>
+        {% endif %} {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container triangle bottom">
+    <img src="{{ "/assets/images/triangle-bottom-white.svg" | relative_url }}"
+    alt="">
+  </div>
+</div>

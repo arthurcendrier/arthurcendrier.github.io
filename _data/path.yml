@@ -1,0 +1,6 @@
+assets: '/assets/'
+images: '/assets/images/'
+portfolio: '/assets/images/portfolio/'
+posts: '/assets/images/posts/'
+css: '/assets/css/'
+js: '/assets/js/'

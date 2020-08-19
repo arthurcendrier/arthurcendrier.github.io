@@ -1,0 +1,51 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio
+description: This is a list of the various websites I’ve worked on so far.
+---
+
+{% include navbar.html %}
+
+<div class="section">
+  <div class="container">
+    <div class="showcase-text">
+      <h1>Portfolio</h1>
+      <p>This is a list of the various websites I’ve worked on so far.</p>
+      <div
+        data-w-id="22f5d5c6-ccb5-e3d2-9dbd-c23fefadde42"
+        class="button-wrapper hidden"
+      >
+        <div class="button-border">
+          <a
+            href="#"
+            style="
+              -webkit-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+            "
+            class="button w-button"
+            >Visit live site</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section background-section showcase-section">
+  <div class="background-container triangle-container scroll-container">
+    <img src="{{ "/assets/images/triangle-top.svg" | relative_url }}" alt="" class="triangle" />
+  </div>
+  <div class="background-container">
+    {% include project-list.html only_featured = false %}
+  </div>
+  <div class="background-container triangle-container">
+    <img src="{{ "/assets/images/triangle-bottom.svg" | relative_url }}" alt="" />
+  </div>
+</div>

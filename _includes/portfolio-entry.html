@@ -1,0 +1,56 @@
+{% assign project = include.entry %}
+{% assign reversed = include.reversed %}
+
+<div class="portfolio-entry {% if reversed %}reversed{% endif %}">
+  <div class="description">
+    {% if project.featured %}
+      <div class="latest-work">latest work</div>
+    {% endif %}
+    <h1 class="portfolio-title">{{ project.title }}</h1>
+    <div class="tags">
+      {% for tag in project.tags %}
+      <div class="tag">{{ tag }}</div>
+      {% endfor %}
+    </div>
+    <p class="paragraph">
+      {{ project.content }}
+    </p>
+    <div
+      data-w-id="53f3588a-ea93-354c-b8db-aba0179c77f5"
+      class="button-wrapper"
+    >
+      <div class="button-border">
+        <a
+          href="{{ project.url }}"
+          style="
+            -webkit-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+          "
+          class="button w-button"
+          >
+          See This Project
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail {% if reversed %}reversed{% endif %}">
+    {% assign asset_path = site.data.path["portfolio"] %}
+    {% assign img_src = asset_path
+      | append: project.img_slug
+      | append: "-thumb-min.png"
+      | relative_url }} %}
+    <a href="{{ project.url }}">
+      <img
+        src="{{ img_src }}"
+        width="544"
+        alt="Portfolio Project Thumbnail"
+      />
+    </a>
+  </div>
+</div>

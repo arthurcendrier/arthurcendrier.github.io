@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="section">
+  <div class="container">
+    <div class="showcase-text">
+
+      <div class="project-showcase">project showcase</div>
+      <h4 class="project-date"> {{ page.date | date: "%B %Y" }} </h4>
+      <h1>{{ page.title }}</h1>
+      <div class="tags centered">
+        {% for tag in page.tags %}
+        <div class="tag">{{ tag }}</div>
+        {% endfor %}
+      </div>
+
+      <p>{{ content }}</p>
+
+      {% if page.show_url %}
+      <div
+        data-w-id="22f5d5c6-ccb5-e3d2-9dbd-c23fefadde42"
+        class="button-wrapper"
+      >
+        <div class="button-border">
+          <a
+            target="_blank"
+            href="{{ page.project_url }}"
+            style="
+              -webkit-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(-8px, -8px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+            "
+            class="button w-button"
+            >Visit live Site</a
+          >
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="section background-section showcase-section">
+    <div class="background-container triangle-container scroll-container">
+      <img src="{{ "/assets/images/triangle-top.svg" | relative_url }}" alt=""
+      class="triangle">
+    </div>
+
+    <div class="background-container">
+      <div class="showcase">
+        {% assign asset_path = site.data.path["portfolio"] %}
+        {% assign showcase_url = "assets/images/portfolio/" | append: page.showcase_image %}
+        {% assign img_src = asset_path
+          | append: page.img_slug
+          | append: "-full-min.jpg"
+          | relative_url %}
+        <img
+          src="{{ img_src }}"
+          sizes="(max-width: 767px) 92vw, 88vw"
+          alt="Portfolio Project Landing Page"
+          class="image"
+        />
+      </div>
+    </div>
+
+    <div class="background-container triangle-container">
+      <img src="{{ "/assets/images/triangle-bottom.svg" | relative_url }}"
+      alt="">
+    </div>
+  </div>
+</div>

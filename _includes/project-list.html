@@ -1,0 +1,26 @@
+{% assign only_featured = include.only_featured %}
+
+{% if only_featured == true %}
+	{% assign projects = site.portfolio | where: "featured", true %}
+{% else %}
+	{% assign projects = site.portfolio %}
+{% endif %}
+
+<!-- sort from newest to oldest -->
+{% assign projects = projects | sort: date | reverse %}
+
+<div id="portfolio" class="portfolio-container">
+	{% assign r = false %}
+	{% for p in projects %}
+		{% include portfolio-entry.html
+			entry = p
+			reversed = r
+		%}
+
+		{% if r == true %}
+			{% assign r = false %}
+		{% else %}
+			{% assign r = true %}
+		{% endif %}
+	{% endfor %}
+</div>

@@ -1,0 +1,45 @@
+title: Arthur Cendrier
+description: Hi! I'm Arthur, a web designer and developer, and this website is my portfolio. Contact me if you need a modern and powerful website!
+tagline: My Web Design & Development Portfolio
+
+url: "http://arthurcendrier.github.io" # the base hostname & protocol for your site
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  portfolio:
+    output: true
+    featured: false
+    show_url: false
+    tags: ["Website Design", "Webflow Development"]
+    permalink: /:collection/:name
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      dark_bg: false
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: "pages/posts/"
+      type: "pages"
+    values:
+      layout: "post"
+      dark_bg: true
+      inject_title: true
+
+exclude:
+  - .gitignore
+  - .vscode/
+  - README.md
