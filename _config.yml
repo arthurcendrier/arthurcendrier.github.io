@@ -2,7 +2,7 @@ title: Arthur Cendrier
 description: Hi! I'm Arthur, a web designer and developer, and this website is my portfolio. Contact me if you need a modern and powerful website!
 tagline: My Web Design & Development Portfolio
 
-url: "http://arthurcendrier.github.io" # the base hostname & protocol for your site
+url: "https://arthurcendrier.com/" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-seo-tag
