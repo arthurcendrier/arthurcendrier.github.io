@@ -726,6 +726,20 @@ figcaption {
   letter-spacing: 0.4em;
 }
 
+.portrait-container {
+  width: 180px;
+  height: 180px;
+  margin: 10px auto 60px auto;
+  padding-left: 10px;
+  border-radius: 200px;
+  overflow: hidden;
+  background-color: $salmon;
+
+  img.portrait {
+    margin-top: 10px;
+  }
+}
+
 .utility-page-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1003,6 +1017,9 @@ figcaption {
   .see-more {
     margin-top: -30px;
     margin-bottom: 20px;
+  }
+  .portrait-container {
+    margin: 5px auto 30px auto;
   }
 }
 

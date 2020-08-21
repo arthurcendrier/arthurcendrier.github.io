@@ -4,6 +4,12 @@ title: Who I Am
 inject_title: false
 ---
 
+{% assign portrait = site.data.path["posts"] | append: "portrait-cutout.png" | relative_url %}
+
+<div class="portrait-container">
+  <img class="portrait" src="{{ portrait }}" alt="Arthur Cendrier">
+</div>
+
 Hi there!
 
 You need a modern and elegant website to drive more traffic to your business? That's where I come in! With my design and development skills, I'll help you build a website that achieves all your objectives. Thanks to a clear and transparent workflow you'll be able to follow and validate my work every step of the way, ensuring that you get exactly what you want!
