@@ -106,7 +106,7 @@ figcaption {
 /**
  * Tables
  */
- table {
+table {
   margin: 10px;
   width: 100%;
   border-collapse: collapse;
@@ -118,18 +118,18 @@ figcaption {
   }
   th,
   td {
-	padding: 0.5em 1em;
+    padding: 0.5em 1em;
   }
   th {
-	background-color: $light-steel-blue;
-  border: 1px solid $semi-black;
-  text-transform: uppercase;
-  font-weight: 600;
-	font-size: 1.2em;
+    background-color: $light-steel-blue;
+    border: 1px solid $semi-black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2em;
   }
   td {
-	border: 1px solid $semi-black;
-	font-size: 0.8em;
+    border: 1px solid $semi-black;
+    font-size: 0.8em;
   }
 }
 
@@ -327,11 +327,12 @@ figcaption {
   margin-left: 96px;
   border-radius: 8px;
   background-color: $salmon;
-  box-shadow: 11px 11px 20px 0 rgba(40, 75, 102, 0.20);
+  box-shadow: 11px 11px 20px 0 rgba(40, 75, 102, 0.2);
 }
 
-.thumbnail:hover, .thumbnail.reversed:hover {
-  box-shadow: 11px 11px 20px 0 rgba(40, 75, 102, 0.50);
+.thumbnail:hover,
+.thumbnail.reversed:hover {
+  box-shadow: 11px 11px 20px 0 rgba(40, 75, 102, 0.5);
   background-color: $white-smoke;
 }
 
@@ -1022,4 +1023,3 @@ figcaption {
     margin: 5px auto 30px auto;
   }
 }
-
