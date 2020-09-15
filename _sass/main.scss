@@ -61,13 +61,13 @@ a:hover {
 
 ul {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-left: 40px;
 }
 
 ol {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-left: 40px;
 }
 
@@ -493,6 +493,21 @@ table {
 .footer-title:hover {
   -webkit-transition: all 200ms ease;
   letter-spacing: 0.2em;
+}
+
+.footer-endline {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:space-between;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+
+  .footer-link {
+    margin-bottom: 0px;
+  }
 }
 
 .navbar {
